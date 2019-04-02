@@ -7,11 +7,13 @@ from pip._vendor.distlib.compat import raw_input
 end = None
 inputError = None
 
+
 def reverse(word):
     x = ''
     for i in range(len(word)):
         x += word[len(word)-i-1]
     return x
+
 
 while not end:
     inputString = raw_input("Enter a String :\n")
