@@ -16,5 +16,5 @@ for x in a:
     if x % 2 == 0:
         b.add(x)
 
-print("La liste initiale vaut : " + str(a) + "\n")
+print("La liste initiale vaut : " + str(a))
 print("La liste contient les nombres pairs suivants : " + str(b) + "\n")
