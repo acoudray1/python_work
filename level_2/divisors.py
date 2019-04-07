@@ -6,18 +6,12 @@
 
 while True:
     inputNumber = int(input("Enter a number :\n"))
-    number = inputNumber % 2
-    children = 0
+    listOfNumbers = list(range(1, inputNumber+1))
     res = []
 
-    while number == 0:
-        if children == 0:
-            children = inputNumber / 2
-        else:
-            children = children / 2
-
-        res.append(children)
-        number = children % 2
+    for num in listOfNumbers:
+        if inputNumber % num == 0:
+            res.append(num)
 
     if len(res) != 0:
         print("The number " + str(inputNumber) + " has " + str(len(res)) + " divisors that are the following : "

@@ -4,19 +4,13 @@
 
 
 def divisors(in_number):
-    number = in_number % 2
-    children = 0
+    inputNumber = in_number % 2
+    listOfNumbers = list(range(2, inputNumber+1))
     res = []
 
-    while number == 0:
-        if children == 0:
-            children = in_number / 2
-        else:
-            children = children / 2
-
-        res.append(children)
-        number = children % 2
-
+    for num in listOfNumbers:
+        if inputNumber % num == 0:
+            res.append(num)
     return res
 
 

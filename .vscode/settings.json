@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\axelc\\Tools\\python\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName",
+    },
+    "code-runner.runInTerminal": true
+}
