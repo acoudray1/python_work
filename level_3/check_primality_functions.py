@@ -4,12 +4,11 @@
 
 
 def divisors(in_number):
-    inputNumber = in_number % 2
-    listOfNumbers = list(range(2, inputNumber+1))
+    listOfNumbers = list(range(2, in_number+1))
     res = []
 
     for num in listOfNumbers:
-        if inputNumber % num == 0:
+        if in_number % num == 0:
             res.append(num)
     return res
 
@@ -17,6 +16,7 @@ def divisors(in_number):
 while True:
     input_number = int(input("Enter a number, I will tell you if it is a prime number or not.\n"))
     result = divisors(input_number)
+    print(result)
 
     if len(result) == 0:
         print("This number is a prime number !")
